@@ -1,0 +1,38 @@
+.color-example {
+    color: navy;
+    background-color: #FF0000;
+    border: 4px solid yellowgreen; 
+}
+
+.header-example {
+    color: orange;
+    font-size: 24px;
+    font-family: 'Comic Sans MS';
+}
+
+.list-example li:nth-child(1) {
+    color: brown;
+    list-style-type : circle;
+}
+
+.list-example li:nth-child(2) {
+    color: darkmagenta;
+    list-style-type: square;
+}
+
+.list-example li:nth-child(3) {
+    color: khaki;
+    list-style-type: georgian;
+}
+
+.text-example {
+    font-family: 'Lucida Handwriting';
+    font-size: 18px;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+.div-example {
+    background-color: darkgreen;
+    border: 5px solid black;
+}
