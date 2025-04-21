@@ -1,0 +1,138 @@
+.color-example {
+    color: navy;
+    background-color: #FF0000;
+    border: 4px solid yellowgreen; 
+}
+
+.header-example {
+    color: orange;
+    font-size: 24px;
+    font-family: 'Comic Sans MS';
+}
+
+.link-2 {
+    background-color: plum;
+    font-size: 20px;
+}
+
+.list-example li:nth-child(1) {
+    color: brown;
+    list-style-type : circle;
+}
+
+.list-example li:nth-child(2) {
+    color: darkmagenta;
+    list-style-type: square;
+}
+
+.list-example li:nth-child(3) {
+    color: khaki;
+    list-style-type: georgian;
+}
+
+.text-example {
+    font-family: 'Lucida Handwriting';
+    font-size: 18px;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+
+.div-example {
+    background-color: darkgreen;
+    border: 5px solid black;
+}
+
+.body-second {
+    background-image: url("bubbles.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.link-1 {
+    background-color: plum;
+    font-size: 20px;
+    margin: 10px;
+}
+
+.just-text {
+    color: black;
+    font-size: 20px;
+    font-family: 'Comic Sans MS';
+    text-align: auto;
+    border: 10px white;
+    border-radius: 10px;
+    background-color: white;
+    margin: 10px;
+}
+
+.header-second {
+    color: navy;
+    font-size: 24px;
+    font-family: Helvetica;
+    border: 10px skyblue;
+    border-radius: 10px;
+    background-color: white;
+    text-align: center;
+}
+
+.div-tattoo {
+    border: 5px solid black;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.tattoo-text {
+    color: black;
+    font-size: 15px;
+    font-family: 'Comic Sans MS';
+    background-color: white;
+}
+
+.div-tattoos {
+    border: 5px solid black;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.tattoo-header {
+    color: black;
+    font-size: 20px;
+    font-family: 'Comic Sans MS';
+    background-color: white;
+    border: 10px;
+    border-radius: 5px;
+}
+
+.caption {
+    color: black;
+    font-size: 15px;
+    font-family: 'Comic Sans MS';
+    background-color: white;
+}
+
+.sleeves {
+    color: black;
+    font-size: 20px;
+    font-family: 'Comic Sans MS';
+    background-color: white;
+    border: 10px;
+    border-radius: 5px;
+}
+
+.tattoos-text {
+    color: black;
+    font-size: 15px;
+    font-family: 'Comic Sans MS';
+    background-color: white;
+}
+
+.footer-second {
+    color: navy;
+    font-size: 18px;
+    font-family: Helvetica;
+    border: 10px skyblue;
+    border-radius: 10px;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+}
