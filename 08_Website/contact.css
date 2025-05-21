@@ -1,0 +1,91 @@
+/* Flexboxia käytetty jotta footer pysyy alhaalla vaikka sisältö ei ole riittävä */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.section-title {
+  font-weight: 600;
+  font-size: 2rem;
+}
+
+.form-control,
+.form-label {
+  font-size: 1rem;
+}
+
+.map-responsive {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio for mobile */
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.map-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+@media (min-width: 768px) {
+  .map-responsive {
+    padding-bottom: 0;
+    height: 400px;
+  }
+
+  .map-responsive iframe {
+    position: static;
+    height: 100%;
+  }
+}
+
+footer {
+  background-color: #0d6efd;
+  color: white;
+  padding: 20px 0;
+}
+
+footer a {
+  color: white;
+  margin: 0 10px;
+}
+
+/* Tumma teema */
+body.dark-mode {
+  background-color: #121212;
+  color: #f1f1f1;
+}
+
+.dark-mode .navbar,
+.dark-mode footer {
+  background-color: #1e1e1e !important;
+}
+
+.dark-mode .navbar a,
+.dark-mode footer a {
+  color: #f1f1f1 !important;
+}
+
+.dark-mode input,
+.dark-mode textarea {
+  background-color: #1f1f1f;
+  color: #f1f1f1;
+  border: 1px solid #444;
+}
