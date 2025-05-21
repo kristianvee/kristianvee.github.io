@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tule mukaan – PaxNova Institute</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="shortcut icon" type="image/png" href="favicon.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="join.css">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow">
+  <div class="container">
+    <a class="navbar-brand" href="index.html"><i class="fas fa-dove me-2 text-primary"></i>PaxNova Institute</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav me-3">
+        <li class="nav-item"><a class="nav-link" href="index.html">Etusivu</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">Meistä</a></li>
+        <li class="nav-item"><a class="nav-link" href="programs.html">Toiminta</a></li>
+        <li class="nav-item"><a class="nav-link" href="partners.html">Yhteistyökumppanit</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Ota yhtyettä</a></li>
+        <li class="nav-item"><a class="nav-link active" href="join.html">Tule mukaan</a></li>
+      </ul>
+      <button id="modeToggle" class="btn btn-outline-primary btn-sm">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main>
+<!-- Lomake -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-4">Tule mukaan luomaan ja edistämään kestävää rauhaa</h2>
+    <p class="text-center mb-5">PaxNova Insitute toivottaa tervetulleeksi yksilöt, joilla on osaamista ja kokemusta
+      <span class="highlight">konfliktin ratkaisussa</span>, <span class="highlight">kansainvälisessä oikeudessa</span>, 
+      <span class="highlight">riidanratkaisussa</span>, <span class="highlight">yhteiskunnan kehittämisessa</span> ja 
+      <span class="highlight">mediassa</span> avuksemme rauhallisemman ja harmonisemman maailman rakentamiseen. Oletpa 
+      sitten ammattilainen, asiantuntija, vapaaehtoistyöntekijä, opiskelija tai lahjoittaja — meiltä löytyy sinulle rooli.</p>
+
+    <div class="row g-4">
+      <div class="col-md-6">
+        <form>
+          <div class="mb-3">
+            <label for="fullname" class="form-label">Koko nimi</label>
+            <input type="text" id="fullname" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Puhelinnumero</label>
+            <input type="tel" class="form-control" id="phone" name="phone" placeholder="+358 123 4567 89">
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Sähköpostiosoite</label>
+            <input type="email" id="email" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="role" class="form-label">Kiinnostuksenkohteet</label>
+            <select id="role" class="form-select">
+              <option value="">Valitse...</option>
+              <option>Kenttätyöskentely</option>
+              <option>Oikeusapu ja -neuvonta</option>
+              <option>Tutkimus ja politiikka</option>
+              <option>Viestintä ja media</option>
+              <option>Varainkeruu ja kumppanuudet</option>
+              <option>Muu</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="cv" class="form-label">Lisää CV</label>
+            <input type="file" class="form-control" id="cv" name="cv" accept=".pdf,.doc,.docx">
+          </div>
+          <div class="mb-3">
+            <label for="motivation" class="form-label">Miksi haluaisit liittyä mukaan?</label>
+            <textarea id="motivation" rows="4" class="form-control" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Lähetä hakemus</button>
+        </form>
+      </div>
+      <div class="col-md-6">
+        <h5>Mitä tarjoamme</h5>
+        <ul class="list-unstyled">
+          <li><i class="fas fa-check-circle text-primary me-2"></i>Merkityksellistä kansainvälistä yhteistyötä</li>
+          <li><i class="fas fa-check-circle text-primary me-2"></i>Mentorointia & vaikutuksellista työtä</li>
+          <li><i class="fas fa-check-circle text-primary me-2"></i>Etä- ja kenttätyömahdollisuuksia</li>
+          <li><i class="fas fa-check-circle text-primary me-2"></i>Rauhanrakentajien ja ammattilaisten laajan kansainvälisen verkoston</li>
+        </ul>
+        <div class="mt-4">
+          <img src="työmies.jpg" alt="Tule mukaan" class="img-fluid rounded shadow">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+    <p class="mb-2 mb-md-0"> &copy; KV Laurea UAS 2025</p>
+    <div>
+      <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+      <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+      <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+      <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
+    </div>
+  </div>
+</footer>
+
+<!-- Skriptit-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+  // Tumma teema
+  const toggleButton = document.getElementById('modeToggle');
+  const body = document.body;
+
+  // Tarkistaa valitun teeman ja asettaa sen
+  if (localStorage.getItem('darkMode') === 'enabled') {
+    body.classList.add('dark-mode');
+    toggleButton.querySelector('i').classList.replace('fa-moon', 'fa-sun');
+  }
+
+  toggleButton.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    const icon = toggleButton.querySelector('i');
+
+    if (body.classList.contains('dark-mode')) {
+      icon.classList.replace('fa-moon', 'fa-sun');
+      localStorage.setItem('darkMode', 'enabled');
+    } else {
+      icon.classList.replace('fa-sun', 'fa-moon');
+      localStorage.setItem('darkMode', 'disabled');
+    }
+  });
+</script>
+</body>
+</html>
