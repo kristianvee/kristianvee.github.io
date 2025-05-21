@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PoxNova Instituesta</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="shortcut icon" type="image/png" href="favicon.png" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="about.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow">
+    <div class="container">
+      <a class="navbar-brand" href="index.html"><i class="fas fa-dove me-2 text-primary"></i>PaxNova Institute</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav me-3">
+          <li class="nav-item"><a class="nav-link" href="index.html">Etusivu</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">Meistä</a></li>
+          <li class="nav-item"><a class="nav-link" href="programs.html">Toiminta</a></li>
+          <li class="nav-item"><a class="nav-link" href="partners.html">Yhteistyökumppanit</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Ota yhteyttä</a></li>
+          <li class="nav-item"><a class="nav-link active" href="join.html">Tule mukaan</a></li>
+        </ul>
+        <button id="modeToggle" class="btn btn-outline-primary btn-sm">
+          <i class="fas fa-moon"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+  <section class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-4">PaxNova Institutesta</h2>
+      <p class="text-center mb-5">
+        PaxNova Institute on kansainvälinen voittoa tavoittelematon järjestö, joka on omistautunut rauhan, 
+        ymmärryksen ja konfliktinratkaisun edistämiseen koulutuksen, vuoropuhelun ja yhteisöjen rakentamisen kautta.
+      </p>
+
+      <div class="row text-center mb-5">
+        <div class="col-md-4">
+          <h4>&#127793; Missiomme</h4>
+          <p>Antaa yksilöille ja yhteisöille valmiudet ratkaista konflikteja ja rakentaa rauhaa tarjoamalla työkaluja, koulutusta ja myötätuntoa.</p>
+        </div>
+        <div class="col-md-4">
+          <h4>&#128301; Visiomme</h4>
+          <p>Maailma, jossa jokaisella on mahdollisuus elää sopusoinnussa – taustasta, uskomuksista tai rajoista riippumatta.</p>
+        </div>
+        <div class="col-md-4">
+          <h4>&#128161; Arvomme</h4>
+          <p>Myötätunto, kunnioitus, osallisuus, väkivallattomuus ja maailman kansalaisuus ohjaavat kaikkea toimintaamme.</p>
+        </div>
+      </div>
+
+      <h3 class="section-title text-center mb-4">Johtoryhmämme</h3>
+      <div class="row justify-content-center">
+        <div class="col-md-3 text-center team-member mb-4">
+          <img src="mies1.png" class="img-fluid mb-2" alt="Founder 1" />
+          <h5>Johannes Adlercreutz</h5>
+          <p>Perustaja ja johtaja</p>
+        </div>
+        <div class="col-md-3 text-center team-member mb-4">
+          <img src="mies2.png" class="img-fluid mb-2" alt="Founder 2" />
+          <h5>Mikael Rantapää</h5>
+          <p>Toimintakoordinaattori</p>
+        </div>
+        <div class="col-md-3 text-center team-member mb-4">
+          <img src="nainen.png" class="img-fluid mb-2" alt="Founder 3" />
+          <h5>Maria Yli-Talonen</h5>
+          <p>Viestintävastaava</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <footer>
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+      <p class="mb-2 mb-md-0"> &copy; KV Laurea UAS 2025</p>
+      <div>
+        <a href="#"><i class="fab fa-facebook fa-lg"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-lg"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-lg"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-lg"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Skriptit -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+  // Tumma teema
+  const toggleButton = document.getElementById('modeToggle');
+  const body = document.body;
+
+  // Tarkistaa valitun teeman ja asettaa sen
+  if (localStorage.getItem('darkMode') === 'enabled') {
+    body.classList.add('dark-mode');
+    toggleButton.querySelector('i').classList.replace('fa-moon', 'fa-sun');
+  }
+
+  toggleButton.addEventListener('click', () => {
+    body.classList.toggle('dark-mode');
+    const icon = toggleButton.querySelector('i');
+
+    if (body.classList.contains('dark-mode')) {
+      icon.classList.replace('fa-moon', 'fa-sun');
+      localStorage.setItem('darkMode', 'enabled');
+    } else {
+      icon.classList.replace('fa-sun', 'fa-moon');
+      localStorage.setItem('darkMode', 'disabled');
+    }
+  });
+  </script>
+</body>
+</html>
